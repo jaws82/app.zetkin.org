@@ -1,2 +1,7 @@
 #!/bin/sh
 yarn lint && yarn check-types
+
+if grep -ER "(test|describe|it)\.only" integrationTesting; then
+    echo ".only test found!"
+    exit 1
+fi
