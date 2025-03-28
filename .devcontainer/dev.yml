@@ -1,0 +1,15 @@
+  # With this version of the app, yarn will install dependencies every time you start
+  # the container. So it's a bit slower to start, which may be annoying if you're only
+  # developing the backend (Zetkin Platform)
+  app-dev-jaws:
+    build:
+      context: .
+      dockerfile_inline: |
+        FROM node:lts-bookworm
+        WORKDIR /repo
+        ENTRYPOINT yarn install
+    ports:
+      - 3000
+    volumes:
+      - ./:/repo
+    network_mode: "host"
