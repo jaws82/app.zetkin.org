@@ -3,14 +3,14 @@
 {
 	"name": "Debian",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/base:bookworm",
+/* 	"image": "mcr.microsoft.com/devcontainers/base:bookworm",
 	"features": {
 		"ghcr.io/devcontainers/features/node:1": {}
 	}
-
-/* 	"dockerComposeFile": "compose.yml",
-	"service": "dev-app-jaws",
-	"workspaceFolder": "/repo", */
+ */
+	"dockerComposeFile": "compose.yaml",
+	"service": "app-dev-jaws",
+	"workspaceFolder": "/repo"
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
