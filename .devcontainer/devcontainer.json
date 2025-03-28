@@ -8,7 +8,7 @@
 		"ghcr.io/devcontainers/features/node:1": {}
 	}
 
-/* 	"dockerComposeFile": "dev.yml",
+/* 	"dockerComposeFile": "compose.yml",
 	"service": "dev-app-jaws",
 	"workspaceFolder": "/repo", */
 
