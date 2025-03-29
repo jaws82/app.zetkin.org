@@ -2,12 +2,12 @@ services:
   # With this version of the app, yarn will install dependencies every time you start
   # the container. So it's a bit slower to start, which may be annoying if you're only
   # developing the backend (Zetkin Platform)
-  app-dev-jaws:
+  devcontainer:
     build:
       context: .
       dockerfile: Dockerfile
     ports:
       - 3000
     volumes:
-      - ../:/repo
+      - ../..:/workspaces:cached
     network_mode: "host"

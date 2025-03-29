@@ -9,8 +9,8 @@
 	}
  */
 	"dockerComposeFile": "compose.yaml",
-	"service": "app-dev-jaws",
-	"workspaceFolder": "/repo"
+	"service": "devcontainer",
+	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}"
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
