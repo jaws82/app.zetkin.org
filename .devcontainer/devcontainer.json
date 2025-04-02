@@ -22,11 +22,14 @@
 	"customizations": {
 		"vscode": {
 			"settings": {
-				
+				"editor.defaultFormatter": "esbenp.prettier-vscode",
+				"editor.formatOnSave": true,
+				"prettier.requireConfig": true,
+				"prettier.useEditorConfig": false
 			},
 			"extensions": [
-				"firefox-devtools.vscode-firefox-debug",
-				"esbenp.prettier-vscode"
+				"esbenp.prettier-vscode",
+				"firefox-devtools.vscode-firefox-debug"
 			]
 		}
 	},
