@@ -1,10 +1,12 @@
-services: 
+services:
   devcontainer:
-    image: node:lts-bookworm
+    build:
+      context: .
+      dockerfile: Dockerfile
+    # image: node:lts-bookworm
     ports:
       - 3000
     volumes:
       - ../..:/workspaces:cached
-    network_mode: "host"
+    network_mode: 'host'
     command: sleep infinity
-    
