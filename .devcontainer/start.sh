@@ -1,2 +1,3 @@
 yarn install
-npx playwright install --with-deps
+npx playwright install
+git config core.hooksPath .githooks
