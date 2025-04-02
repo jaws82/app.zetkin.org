@@ -24,5 +24,7 @@
     }
   },
 
-  "remoteUser": "node"
+  "remoteUser": "node",
+
+  "postStartCommand": "yarn install"
 }
