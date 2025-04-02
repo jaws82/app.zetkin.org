@@ -26,5 +26,5 @@
 
   "remoteUser": "node",
 
-  "postStartCommand": "yarn install"
+  "postStartCommand": "bash .devcontainer/start.sh"
 }
