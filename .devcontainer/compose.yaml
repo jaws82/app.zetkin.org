@@ -3,9 +3,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    # image: node:lts-bookworm
-    # ports:
-    #   - 3000
     volumes:
       - ../..:/workspaces:cached
     network_mode: 'service:geo-db'
