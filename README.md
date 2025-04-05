@@ -95,10 +95,9 @@ then this only works on Linux-based systems, due to the nature of `127.0.0.1` po
 As **another alternative**, you can run the provided dev container. This
 
 - Requires Docker Compose
+- (VSCode) Requires [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 
-If you use VSCode, you should install the [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
-
-Once you have cloned the GitHub repo locally, select the option to `Open in Container`, either from a prompt or after clicking the `Open a Remote Window` icon in the bottom-left corner of the window.
+Once you have cloned the GitHub repo locally, select the option to `Open in Container`, either from the prompt or after clicking the `Open a Remote Window` icon in the bottom-left corner of the window.
 
 The new container will take a while to set itself up. It will automatically pull the images, install dependencies, then install the app and playwright, along with recommended VSCode extensions and preferred configurations. It will also start a mongodb container for using the Geographies feature.
 
@@ -107,6 +106,8 @@ Once setup is complete, you can start the development server in the same way as 
 ```
 $ yarn devserver
 ```
+
+For your reference, there's a [guide to developing inside a container](https://code.visualstudio.com/docs/devcontainers/containers) on the VSCode website.
 
 JetBrains IDE also supports dev containers but this has not yet been tested!
 
