@@ -1,3 +1,2 @@
 FROM node:lts-bookworm
-RUN ["npx","playwright","install","--with-deps"]
-# RUN yarn install
+RUN ["npx","playwright","install-deps"]
